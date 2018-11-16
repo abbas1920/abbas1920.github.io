@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 0 0;
+    color: #000;
+    background: #efefef url(../images/bg.png);
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.w-100 {
+    width: 100%!important;
+}
+
+.d-block {
+    display: block!important;
+}
+
+.mb-1,
+.my-1 {
+    margin-bottom: .25rem!important;
+}
+
+.mb-4,
+.my-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.small,
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+h6 {
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h5 {
+    font-weight: 700;
+    padding: 20px 0 10px 0;
+}
+
+
+/*Header*/
+
+header {
+    display: flex;
+}
+
+header .logo {
+    flex: 1 1 100%;
+    align-content: center;
+}
+
+header .logo img {
+    width: 150px;
+    height: 43px;
+}
+
+header .burger-menu {
+    width: 50px;
+    height: 50px;
+}
+
+header .burger-menu .fa-bars {
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+/*Menu*/
+
+.menu {
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 100%;
+    transition: left .2s;
+    background-color: whitesmoke;
+    z-index: 2;
+}
+
+.menu ul {
+    padding: 10px 20px;
+}
+
+.menu li {
+    padding: 15px 10px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+
+.menu li .fa {
+    margin-right: 7px;
+}
+
+.menu .fa-bars {
+    padding: 20px 0 0 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sub-menu {
+    margin-top: 10px;
+}
+
+.sub-menu .sub-menu-item {
+    padding: 15px 10px;
+}
+
+.has-sub-menu .fa-caret-down {
+    position: absolute;
+    right: 30px;
+}
+
+
+/*Section*/
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+
+/*Content*/
+
+.carousel.slider {
+    width: 100%;
+    position: relative;
+}
+
+.carousel-inner img {
+    width: 100%;
+    display: none;
+}
+
+.carousel-inner img.active {
+    display: inline;
+}
+
+.content {
+    text-align: justify;
+}
+
+.tour360 {
+    display: flex;
+}
+
+.tour360 .tour-image {
+    background-image: url(../images/360.jpg);
+    flex: 1 0 50%;
+    height: 150px;
+    background-position: center;
+}
+
+.tour360 .tour-icon {
+    background-image: url(../images/360virtual-icon.png);
+    flex: 1 0 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140px;
+}
+
+iframe {
+    border: 1px solid lightgrey;
+}
+
+
+/*Footer*/
+
+footer {
+    background: #99004C;
+    margin: 20px -15px 0 -15px;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+footer .txt {
+    padding: 5px 0;
+}
+
+footer .txt.name {
+    font-size: 18px;
+}
+
+footer .copyright {
+    border-top: 1px dotted whitesmoke;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.list-inline {
+    padding: 0;
+}
+
+.list-inline li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.list-inline .fa {
+    color: white;
+    border: 1px solid white;
+    width: 40px;
+    border-radius: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+/*Contact Us */
+
+.txt-input {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0 15px 0;
+}
+
+.txt-label {
+    font-weight: 700;
+}
+
+.txt-button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.cont .article-list-group {
+    padding: 10px 0 20px 0px;
+}
+
+
+/*About Us*/
+
+#aboutUsSec img {
+    margin: 10px 0 20px 0;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+#gallery1Sec span,
+#gallery2Sec span {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.social-icon {
+    display: none;
+}
+
+#aboutUsSec {
+    width: 1140px;
+    max-width: 1140px;
+    min-width: 1140px;
+}
