@@ -39,6 +39,14 @@ function removeClassShow(el) {
 }
 
 function closePopup(ev) {
+		var elName = document.getElementById("userName");
+    var elMobile = document.getElementById("userMobile");
+    var elEMail = document.getElementById("userEMail");
+		var elMsg = document.getElementById("userMsg");
+		elName.value = '';
+		elMobile.value = '';
+		elEMail.value = '';
+		elMsg.value = '';
     if (document.getElementById("popup").classList.contains('show')) {
         document.getElementById("popup").classList.remove("show");
     }
