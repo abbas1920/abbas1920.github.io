@@ -237,3 +237,42 @@
     font-size: 1.25rem;
     font-weight: 300;
 }
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 10;
+    display: none;
+}
+
+.popup-container.show {
+    display: block;
+}
+
+.popup-container .popup-box {
+    height: 250px;
+    position: relative;
+    width: 80%;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 2px 2px 5px greenyellow;
+    z-index: 10;
+    min-width: 250px;
+}
+
+.popup-container .popup-box .head {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.popup-container .popup-box p {
+    font-size: 16px;
+}
