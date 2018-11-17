@@ -75,6 +75,7 @@ h5 {
 header {
     display: flex;
 		overflow: hidden;
+		position: relative;
 }
 
 header .logo {
