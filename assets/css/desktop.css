@@ -173,3 +173,11 @@ footer {
     font-size: 35px;
     font-weight: 700;
 }
+
+#aboutUsSec #mission {
+    display: inline-block!important;
+}
+
+.tab-content.sm {
+    display: none!important;
+}

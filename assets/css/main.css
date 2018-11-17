@@ -351,3 +351,11 @@ footer .copyright {
     overflow-x: visible!important;
     position: relative;
 }
+
+#aboutUsSec #mission {
+    display: none;
+}
+
+.tab-content.sm {
+    display: block;
+}
