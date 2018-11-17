@@ -187,8 +187,8 @@
     border: 2px solid white;
 }
 
-.image-list img {
-    box-shadow: 1px 1px 5px 99004C;
+.image-list img:hover {
+    box-shadow: 1px 1px 5px #99004C;
 }
 
 .image-container img {
