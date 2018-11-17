@@ -93,7 +93,7 @@ header .menu {
     position: static;
 }
 
-article.home h5 {
+aside.home h5 {
     margin: 0 0 10px 0;
     padding-top: 0;
 }
@@ -107,15 +107,15 @@ article.home h5 {
     display: inline;
 }
 
-article.nav {
+aside.nav {
     display: flex;
 }
 
-article.nav h5 {
+aside.nav h5 {
     border-bottom: 2px solid #880e4f;
 }
 
-article.nav article {
+aside.nav aside {
     flex: 1 0 33.33%;
     padding: 0 10px;
 }
@@ -133,7 +133,7 @@ footer {
     display: flex;
 }
 
-.foo article,
+.foo aside,
 .foo .list-inline {
     flex: 1 0 50%;
     align-self: center;
@@ -147,7 +147,7 @@ footer {
     display: flex;
 }
 
-.cont article {
+.cont aside {
     flex: 1 0 50%;
 }
 
