@@ -1,5 +1,6 @@
 header {
     flex-wrap: wrap;
+		overflow: visible;
 }
 
 .burger-menu {
