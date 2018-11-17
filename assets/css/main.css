@@ -15,7 +15,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     max-width: 1140px;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
 
 ul {
@@ -339,8 +339,15 @@ footer .copyright {
     display: none;
 }
 
-#aboutUsSec {
+.gradient {
     width: 1140px;
     max-width: 1140px;
     min-width: 1140px;
+    background: linear-gradient(#F8BBD0, #880e4f, #F8BBD0);
+    background: -moz-linear-gradient(#F8BBD0, #880e4f, #F8BBD0);
+    background: -webkit-linear-gradient(#F8BBD0, #880e4f, #F8BBD0);
+    background: -o-linear-gradient(#F8BBD0, #880e4f, #F8BBD0);
+    background: -ms-linear-gradient(#F8BBD0, #880e4f, #F8BBD0);
+    overflow-x: visible!important;
+    position: relative;
 }
