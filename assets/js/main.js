@@ -107,10 +107,12 @@ function prevNext2() {
 
 function openMenu() {
     document.getElementsByClassName("menu")[0].style.left = "20%";
+		document.getElementById("header").style.position = "static";
 }
 
 function closeMenu() {
     document.getElementsByClassName("menu")[0].style.left = "100%";
+		document.getElementById("header").style.position = "relative";
 }
 
 function nav(ev) {
