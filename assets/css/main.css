@@ -74,8 +74,8 @@ h5 {
 
 header {
     display: flex;
-		overflow: hidden;
-		position: relative;
+    overflow: hidden;
+    position: relative;
 }
 
 header .logo {
@@ -157,6 +157,7 @@ section {
 
 section.active {
     display: block;
+    margin-bottom: 100px;
 }
 
 
@@ -211,6 +212,8 @@ footer {
     margin: 20px -15px 0 -15px;
     padding: 10px;
     color: whitesmoke;
+    text-align: center;
+    z-index: 5;
 }
 
 footer .txt {
@@ -222,14 +225,15 @@ footer .txt.name {
 }
 
 footer .copyright {
-    border-top: 1px dotted whitesmoke;
+    /*border-top: 1px dotted whitesmoke;
     padding: 10px 0;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 15px;*/
 }
 
 .list-inline {
     padding: 0;
+    margin: 0;
 }
 
 .list-inline li {

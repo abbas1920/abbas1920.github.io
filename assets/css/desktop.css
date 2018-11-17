@@ -1,6 +1,6 @@
 header {
     flex-wrap: wrap;
-		overflow: visible;
+    overflow: visible;
 }
 
 .burger-menu {
@@ -31,6 +31,11 @@ header .menu {
     color: white;
     margin: 10px 0 0 0;
     padding: 0;
+    background: linear-gradient( #880e4f, #D81B60);
+    background: -moz-linear-gradient( #880e4f, #D81B60);
+    background: -webkit-linear-gradient( #880e4f, #D81B60);
+    background: -o-linear-gradient( #880e4f, #D81B60);
+    background: -ms-linear-gradient( #880e4f, #D81B60);
 }
 
 .menu li {
@@ -115,6 +120,15 @@ article.nav article {
     padding: 0 10px;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 30px;
+    text-align: left;
+}
+
 .foo {
     display: flex;
 }
@@ -122,6 +136,7 @@ article.nav article {
 .foo article,
 .foo .list-inline {
     flex: 1 0 50%;
+    align-self: center;
 }
 
 .foo .list-inline {
@@ -155,20 +170,4 @@ article.nav article {
     top: 100px;
     font-size: 35px;
     font-weight: 700;
-}
-
-.social-icon {
-    display: block;
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-}
-
-.social-icon .list-inline li {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.social-icon .list-inline .fa {
-    background: black;
 }
