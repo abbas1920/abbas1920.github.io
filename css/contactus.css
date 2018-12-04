@@ -125,3 +125,8 @@ iframe {
 .txt-error.show {
     display: block;
 }
+
+.frame {
+    width: 100%;
+    height: 250px;
+}
