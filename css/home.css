@@ -1,0 +1,92 @@
+.article {
+    display: flex;
+    margin-top: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.article .nav {
+    flex: 0 0 400px;
+    margin: 10px;
+}
+
+.article .nav .list-group {
+    width: 370px;
+}
+
+.article .nav .list-group .play {
+    position: absolute;
+    right: 23px;
+    top: 38px;
+}
+
+.content {
+    display: flex;
+}
+
+.content .block1 {
+    flex: 0 0 390px;
+}
+
+.content .block2 {
+    flex: 1 1 auto;
+    margin-left: 30px;
+}
+
+.content section {
+    background-color: rgba(255, 255, 255, .6);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content section .hansans {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.slider {
+    background-image: url(../images/slider1.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    flex: 1;
+    margin: 11px 10px 0 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.slider .circle {
+    position: absolute;
+    top: 322px;
+    left: 50%;
+    margin-left: -34px;
+}
+
+.slider .circle .material-icons {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.slider .circle .material-icons.active {
+    color: grey;
+}
+
+.slider .circle .material-icons:hover {
+    color: #007bff;
+}
+
+.slider .txt {
+    position: absolute;
+    top: 363px;
+    text-align: center;
+}
+
+.hideicon {
+    display: none;
+}

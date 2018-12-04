@@ -1,0 +1,127 @@
+.article {
+    display: flex;
+    margin-top: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+}
+
+.article .form,
+.article .time {
+    flex: 1 1;
+    padding: 30px;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+}
+
+.concrete,
+.music {
+    margin-top: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+}
+
+.concrete .card {
+    margin: 20px;
+    float: left;
+    height: 430px;
+}
+
+.concrete .card-img-top {
+    width: 150px;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+.music .card-img-top {
+    width: 106px;
+    margin: 10px;
+}
+
+.music .card {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin: 20px;
+    width: 400px;
+}
+
+.music img {
+    flex: 0 0;
+}
+
+.music div {
+    flex: 0 0 200px;
+}
+
+.music div .material-icons {
+    vertical-align: bottom;
+}
+
+.music div .card-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 240px;
+}
+
+.music .w1 {
+    width: 20%;
+}
+
+.txtLocate {
+    padding: 20px;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 10;
+    display: none;
+}
+
+.popup-container.show {
+    display: block;
+}
+
+.popup-container .popup-box {
+    height: 250px;
+    position: relative;
+    width: 80%;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 2px 2px 5px greenyellow;
+    z-index: 10;
+    min-width: 250px;
+}
+
+.popup-container .popup-box .head {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.popup-container .popup-box p {
+    font-size: 16px;
+}
+
+.txt-error {
+    display: none;
+}
+
+.txt-error.show {
+    display: block;
+}
