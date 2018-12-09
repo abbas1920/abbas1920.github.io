@@ -1,0 +1,44 @@
+.c-sno,
+.c-plus,
+.c-vert {
+    width: 5%;
+}
+
+.c-img {
+    width: 10%;
+}
+
+.c-txt {
+    width: 65%;
+}
+
+.c-time {
+    width: 10%;
+}
+
+.c-vert svg {
+    width: 20px;
+    height: 20px;
+}
+
+.c-img img {
+    width: 80px;
+}
+
+.music-banner img {
+    width: 200px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.music-banner .img {
+    flex: 0 0 250px;
+}
+
+.music-banner .txt {
+    margin: 20px 0;
+}
+
+.table {
+    margin: 0 20px;
+}

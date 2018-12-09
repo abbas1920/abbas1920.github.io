@@ -1,0 +1,37 @@
+https://audiomack.com/
+https://audiomack.com/playlist/audiomack-afrobeats/verified-afropop
+https://noisetrade.com/
+http://mdundo.com/a/14761
+https://www.amazon.co.uk/Digital-Music/b?ie=UTF8&node=77197031
+
+.gamja {
+    font-family: 'Gamja Flower', cursive;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.char {
+    font-family: 'Charmonman', cursive;
+}
+
+.bungee {
+    font-family: 'Bungee', cursive;
+}
+
+.pacific {
+    font-family: 'Pacifico', cursive;
+}
+
+.yanone {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.amatic {
+    font-family: 'Amatic SC', cursive;
+}
+
+.barlow {
+    font-family: 'Barlow Condensed', sans-serif;
+}

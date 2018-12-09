@@ -2,128 +2,111 @@
 <html lang="en">
 
 <head>
-    <title>Tribute Ltd</title>
+    <title>Tribute Inc</title>
+    <!-- Meta tag charset used for character encoding -->
     <meta charset="UTF-8">
+    <!-- Meta tag http-equiv used for select latest IE compatible version  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta tag Viewport is used to scale the webpage  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="18 Years of tradition in musical environment">
-    <meta name="keywords" content="tribute music download london artist">
+    <!-- Imported Google Material Icons Stylesheet -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Imported Google Material Fonts Stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Barlow+Condensed|Bungee|Charmonman|Gamja+Flower|Pacifico|Playfair+Display|Yanone+Kaffeesatz" rel="stylesheet">
+    <!-- Imported Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Imported Project specific Stylesheet -->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Header Content -->
     <header id="header">
-        <i class="material-icons logo">music_video</i>
-        <div class="logo-txt">Tribute Ltd</div>
+        <img class="logo" src="images/logo.png" width="60" height="60">
+        <div class="logo-txt barlow">Tribute Inc</div>
         <ul class="menu">
             <li id="mnuHome" class="active">Home</li>
             <li id="mnuMusic">Music</li>
-            <li id="mnuConcrete">Concert</li>
+            <li id="mnuArtist">Artist</li>
             <li id="mnuContactUs">Contact Us</li>
         </ul>
-        <div class="search">
-            <input type="text" placeholder="Search Cities, Artists, Venues & Events">
-            <i class="material-icons">search</i>
-        </div>
     </header>
-    <div class="article">
-        <div class="nav">
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Top 5 Hit Album</h5>
-                    </div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Sorry</h5>
-                        <small class="text-muted">03:25</small>
-                    </div>
-                    <p class="mb-1">Justin Bieber</p>
-                    <i id="play1" class="material-icons play" onclick="play(1)">play_circle_outline</i>
-                    <i id="stop1" class="material-icons play hideicon" onclick="stop(1)">pause_circle_outline</i>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">All of me</h5>
-                        <small class="text-muted">05:07</small>
-                    </div>
-                    <p class="mb-1">John Legend</p>
-                    <i id="play2" class="material-icons play" onclick="play(2)">play_circle_outline</i>
-                    <i id="stop2" class="material-icons play hideicon" onclick="stop(2)">pause_circle_outline</i>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Bad Romance</h5>
-                        <small class="text-muted">03:18</small>
-                    </div>
-                    <p class="mb-1">Lady Gaga</p>
-                    <i id="play3" class="material-icons play" onclick="play(3)">play_circle_outline</i>
-                    <i id="stop3" class="material-icons play hideicon" onclick="stop(3)">pause_circle_outline</i>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">In case you didnt know</h5>
-                        <small class="text-muted">03:56</small>
-                    </div>
-                    <p class="mb-1">Brett Young</p>
-                    <i id="play4" class="material-icons play" onclick="play(4)">play_circle_outline</i>
-                    <i id="stop4" class="material-icons play hideicon" onclick="stop(4)">pause_circle_outline</i>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Shake it off</h5>
-                        <small class="text-muted">03:56</small>
-                    </div>
-                    <p class="mb-1">Taylor Swift</p>
-                    <i id="play5" class="material-icons play" onclick="play(5)">play_circle_outline</i>
-                    <i id="stop5" class="material-icons play hideicon" onclick="stop(5)">pause_circle_outline</i>
-                </a>
+    <div class="slider">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Top 5</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <i id="play1" class="material-icons play" onclick="play(1)">play_circle_outline</i>
+                        <i id="stop1" class="material-icons play hideicon" onclick="stop(1)">pause_circle_outline</i>
+                        <span class="char">03:25</span>
+                        <div class="pacific">NOW That's What I Call Music</div>
+                    </li>
+                    <li class="nav-item">
+                        <i id="play2" class="material-icons play" onclick="play(2)">play_circle_outline</i>
+                        <i id="stop2" class="material-icons play hideicon" onclick="stop(2)">pause_circle_outline</i>
+                        <span class="char">05:07</span>
+                        <div class="pacific">The Greatest Showman</div>
+                    </li>
+                    <li class="nav-item">
+                        <i id="play3" class="material-icons play" onclick="play(3)">play_circle_outline</i>
+                        <i id="stop3" class="material-icons play hideicon" onclick="stop(3)">pause_circle_outline</i>
+                        <span class="char">03:18</span>
+                        <div class="pacific">Odyssey</div>
+                    </li>
+                    <li class="nav-item">
+                        <i id="play4" class="material-icons play" onclick="play(4)">play_circle_outline</i>
+                        <i id="stop4" class="material-icons play hideicon" onclick="stop(4)">pause_circle_outline</i>
+                        <span class="char">03:56</span>
+                        <div class="pacific">Delta</div>
+                    </li>
+                    <li class="nav-item">
+                        <i id="play5" class="material-icons play" onclick="play(5)">play_circle_outline</i>
+                        <i id="stop5" class="material-icons play hideicon" onclick="stop(5)">pause_circle_outline</i>
+                        <span class="char">03:57</span>
+                        <div class="pacific">Trance Nation</div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </div>
+    <div class="row about-us">
+        <div class="col yanone">
+            <img src="images/home1.jpg">
+            <div class="head">About Us</div>
+            <div class="txt">With 18 years of tradition in the musical environment, the Tribute Inc offers a service of extreme quality and affordable prices. Located in the South Zone of London, near the tube Chancery Lane, the studio has three rooms for rehearsals and
+                recording carefully treated with acoustic materials of first quality. His recordings are performed using digital and semi-analog methods, using the most modern audio software and plug-ins of today. For greater comfort of its clients, the
+                studio also has wi-fi internet, air conditioning, pool table, security cameras and plasma televisions with cable tv.
             </div>
         </div>
-        <div id="imgSlider" class="slider">
-            <div class="circle">
-                <i onclick="slide(1)" class="material-icons active">lens</i>
-                <i onclick="slide(2)" class="material-icons">panorama_fish_eye</i>
-                <i onclick="slide(3)" class="material-icons">panorama_fish_eye</i>
-            </div>
-            <div id="txtSlider" class="txt">
-                The terms 'Tribute Act', 'Impersonator', 'Soundalike' and 'Lookalike' are used to describe a singer or band whose show is dedicated to the reproduction of a popular celebrity or famous band.
-            </div>
+        <div class="col yanone">
+            <img src="images/home2.jpg">
+            <div class="head">Our Mission</div>
+            <div class="txt">The Tribute Inc offers its customers excellent equipment such as microphones, PA system, amplifiers, battery and sound desk. In addition, it provides rental of instruments for internal use: guitars, bases and drums accessories. In addition
+                to the studio, the Tribute Inc is also a recording producer and label focused on the independent market, having promoted CS collections and various events. His field of action is vast, encompassing all musical styles. </div>
+        </div>
+        <div class="col yanone">
+            <img src="images/home3.jpg">
+            <div class="head">Why are we different?</div>
+            <div class="txt">With the purpose of encouraging the artist to disseminate the musical culture, we operate with the best cost-benefit, added to a personalized service and an excellent quality in the services. Quality, low cost. 100% garantee. Technology, commitment
+                and professionalism. Honest service with transparent information. We turn up the volume and you release your sound. Schedule your rehearsal or recording session.</div>
         </div>
     </div>
 
-    <div class="content">
-        <div class="block1">
-            <section>
-                <h1 class="hansans">Our Mission</h1>
-                <div class="nota">With the purpose of encouraging the artist to disseminate the musical culture, we operate with the best cost-benefit, added to a personalized service and an excellent quality in the services.</div>
-            </section>
-            <section>
-                <h1 class="hansans">Why are we different?</h1>
-                <div class="nota">Quality, low cost. 100% garantee. Technology, commitment and professionalism. Honest service with transparent information.</div>
-            </section>
-        </div>
-        <section class="block2">
-            <h1 class="hansans">About Us</h1>
-            <div class="nota">With 18 years of tradition in the musical environment, the Tribute Ltd offers a service of extreme quality and affordable prices. Located in the South Zone of London, near the tube Chancery Lane, the studio has three rooms for rehearsals and
-                recording carefully treated with acoustic materials of first quality. His recordings are performed using digital and semi-analog methods, using the most modern audio software and plug-ins of today. The Tribute Ltd offers its customers
-                excellent equipment such as microphones, PA system, amplifiers, battery and sound desk. In addition, it provides rental of instruments for internal use: guitars, bases and drums accessories. For greater comfort of its clients, the studio
-                also has wi-fi internet, air conditioning, pool table, security cameras and plasma televisions with cable tv. In addition to the studio, the Tribute Ltd is also a recording producer and label focused on the independent market, having promoted
-                CS collections and various events. His field of action is vast, encompassing all musical styles. We turn up the volume and you release your sound. Schedule your rehearsal or recording session.</div>
-        </section>
-    </div>
-
+    <!-- Footer Content -->
     <footer>
-        <div>Copyright 2018 Tribute Ltd © All Rights Reserved</div>
-        <div>
-            <p>Contact Us Ready to book session?</p>
-            <p>
-                Call us at <i class="material-icons">phone</i> (44) 02050344555 | WHATSAPP <i class="material-icons">textsms</i> (44) 07941567423
-            </p>
+        <div>© 2000-2018, Tribute Inc. or its affiliates</div>
+        <div class="link">
+            <a href="home.html" class="btn btn-outline-light" role="button">Home</a>
+            <a href="music.html" class="btn btn-outline-light" role="button">Music</a>
+            <a href="artist.html" class="btn btn-outline-light" role="button">Artist</a>
+            <a href="contactus.html" class="btn btn-outline-light" role="button">Contact Us</a>
         </div>
     </footer>
+    <!-- Common audio controller to play music of top 5 music albums -->
     <audio id="myAudio">
         <source id="myAudioSrc" src="audio/01.mp3" type="audio/mpeg">
     </audio>

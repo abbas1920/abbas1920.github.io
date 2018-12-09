@@ -1,6 +1,6 @@
 .article {
     display: flex;
-    margin-top: 80px;
+    margin-top: 10px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -13,31 +13,35 @@
     padding: 30px;
 }
 
+.article .form .txt {
+    text-align: right;
+}
+
+.article .table .thead-dark th {
+    background-color: #ff8b01;
+    border-color: #ff8b01;
+    text-align: center;
+}
+
+.article .table .thead-dark tr {
+    border: 1px solid #ff8b01;
+}
+
+.article .table tbody td {
+    border: 1px solid #ff8b01;
+    text-align: center;
+}
+
+
+/* Google map iframe styles and set to width 100% */
+
 iframe {
     width: 100%;
     height: 250px;
 }
 
-.concrete,
-.music {
-    margin-top: 80px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: white;
-}
 
-.concrete .card {
-    margin: 20px;
-    float: left;
-    height: 430px;
-}
-
-.concrete .card-img-top {
-    width: 150px;
-    margin-left: 65px;
-    margin-top: 10px;
-}
+/* Music page styles */
 
 .music .card-img-top {
     width: 106px;
@@ -53,7 +57,7 @@ iframe {
 }
 
 .music img {
-    flex: 0 0;
+    flex: 0 0 106px;
 }
 
 .music div {
@@ -79,44 +83,16 @@ iframe {
     padding: 20px;
 }
 
-.popup-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .6);
-    z-index: 10;
-    display: none;
-}
 
-.popup-container.show {
+/* Contact us popup styles */
+
+#popup.show {
     display: block;
+    background: rgba(0, 0, 0, .6);
 }
 
-.popup-container .popup-box {
-    height: 250px;
-    position: relative;
-    width: 80%;
-    padding: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 50px;
-    max-width: 500px;
-    background-color: white;
-    box-shadow: 2px 2px 5px greenyellow;
-    z-index: 10;
-    min-width: 250px;
-}
 
-.popup-container .popup-box .head {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.popup-container .popup-box p {
-    font-size: 16px;
-}
+/* Form validation error styles */
 
 .txt-error {
     display: none;
@@ -124,6 +100,7 @@ iframe {
 
 .txt-error.show {
     display: block;
+    color: crimson;
 }
 
 .frame {

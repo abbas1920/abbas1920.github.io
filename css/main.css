@@ -1,22 +1,45 @@
 * {
     box-sizing: border-box;
+    /* Applying to all DOM elements */
 }
 
-.hansans {
-    font-family: 'Black Han Sans', sans-serif;
+
+/* Google Font Initialization to custom class name */
+
+.gamja {
+    font-family: 'Gamja Flower', cursive;
 }
 
-.oswald {
-    font-family: 'Oswald', sans-serif;
+.playfair {
+    font-family: 'Playfair Display', serif;
 }
 
-.ave {
-    font-family: 'Sedgwick Ave', cursive;
+.char {
+    font-family: 'Charmonman', cursive;
 }
 
-.nota {
-    font-family: 'Noto Sans TC', sans-serif;
+.bungee {
+    font-family: 'Bungee', cursive;
 }
+
+.pacific {
+    font-family: 'Pacifico', cursive;
+}
+
+.yanone {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.amatic {
+    font-family: 'Amatic SC', cursive;
+}
+
+.barlow {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+/* Resetting default UL style */
 
 ul {
     list-style: none;
@@ -26,90 +49,87 @@ ul {
 
 body {
     padding: 0;
-    background-image: url(../images/bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+    overflow-x: hidden;
 }
 
 header {
     position: fixed;
+    /* Making header content fixed and not scrollable */
     left: 0;
     top: 0;
     right: 0;
     height: 70px;
+    /* Height of the header content is 70px */
     display: flex;
     z-index: 10;
+    /* Z-index is set to bring th header content forward */
 }
+
+
+/* Tribute logo */
 
 header .logo {
-    font-size: 40px;
-    color: white;
     flex: 0 0 50px;
-    margin: 10px 0px 0 20px;
+    margin: 5px 20px 0 20px;
 }
 
+
+/* Tribute name */
+
 header .logo-txt {
-    color: white;
+    color: #ff8b01;
     font-size: 35px;
-    font-family: Oswald;
-    margin-top: 1px;
+    line-height: 70px;
     flex: 1 1 auto;
 }
 
 header .menu {
     align-self: self-end;
-    margin-left: 50px;
+    margin-right: 50px;
 }
 
 header .menu li {
     display: inline-block;
-    padding: 18px 10px 10px 10px;
-    color: white;
-    font-family: 'Sedgwick Ave', cursive;
-    font-size: 18px;
-    margin: 0 20px;
+    padding: 18px 0 10px 0;
+    color: #ff8b01;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 23px;
+    margin: 0;
     cursor: pointer;
+    border-left: 1px solid #ff8b01;
+    width: 144px;
+    text-align: center;
+    margin-left: -4px;
 }
 
 header .menu li.active {
-    border-bottom: 3px solid white;
+    background-color: #ff8b01;
+    color: white;
+    /* Used to indicate current page */
 }
 
 header .menu li:hover {
-    background-color: #007bff;
+    background-color: #ff8b01;
+    /* On hover menu color will toggle */
     color: white;
 }
 
-header .search {
-    position: relative;
-}
 
-header .search input[type=text] {
-    border: 1px solid grey;
-    padding: 10px 10px 10px 40px;
-    margin: 10px;
-    border-radius: 5px;
-    width: 350px;
-}
-
-header .search .material-icons {
-    position: absolute;
-    left: 20px;
-    top: 21px;
-    color: grey;
-}
+/* Header background will change to black (onScroll javascript event scroll class is toggled) */
 
 header.scroll {
     box-shadow: 1px 1px 5px white;
     background: black;
 }
 
+
+/* Footer styles */
+
 footer {
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: #23232d;
     color: white;
 }
 
@@ -118,10 +138,26 @@ footer div {
     margin: 10px 20px;
 }
 
-footer div p {
-    margin: 0;
+footer div.link {
+    text-align: right;
 }
 
-footer div p .material-icons {
-    vertical-align: bottom;
+.banner {
+    background-image: url(../images/music-concerts.jpeg);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    background-size: 100%;
+    background-position-y: -60px;
+    position: relative;
+}
+
+.banner .txt {
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
 }

@@ -1,0 +1,14 @@
+.artist {
+    margin: 10px -10px;
+}
+
+.artist .col {
+    flex: 0 0 424px;
+    margin: 20px 0;
+}
+
+.artist .col img {
+    width: 424px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
